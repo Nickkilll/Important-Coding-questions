@@ -31,15 +31,18 @@ Welcome greeting message
 
 CODE:
 
-n=int(input())
-a=list(map(int,input().split()))
-b=[]
-c=[]
-for i in a:
+def ReArrangeArray(a,n):
+    for i in a:
         if i<0:
             b.append(i)
         else:
             c.append(i)
-e=b+c            
+    return b+c  
+    
+n=int(input())
+a=list(map(int,input().split()))
+b=[]
+c=[]
+e=ReArrangeArray(a,n)
 for i in e:
     print(i,end=" ")
